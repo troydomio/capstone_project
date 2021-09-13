@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+
+/* Nav bar css */
+.navbar{
+  border-bottom: 1px solid #D3D3D3;
+  font-family:'yellowtail';
+  font-size: 28px;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Login page  */
+.login{
+  width: 400px;
+  padding: 1vh;
+  margin: auto;
+  margin-top: 1vh;
+  max-width: 500px;
+}
+.login input{
+  width: 400px;
+  box-sizing: border-box;
+  padding: 22px 20px;
+  margin: 8px 0;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main page css */
+.imagecontainer{
+  /* border: 2px solid black; */
+  margin: auto;
+  margin-top: 3vh;
+  max-width: 970px;
+  height:900px;
+  display: grid; 
+  grid-template-columns: repeat(3, 330px);
+}
+.imagecard{
+  border: 1px solid #D3D3D3;
+  max-width: 40vh;
+  height: 60vh;
+  overflow:scroll;
+  margin-left: 2vh;
+  margin-top: 2vh;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ 
+}
+.imagecard:hover{
+  box-shadow: 5px 5px 5px grey;
+  transform: translateY(-10px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imagecontent{
+background-color: #D0D4D7
+}
+.user{
+  border-bottom: 1px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.comment{
+  border: 1px solid #D3D3D3;
+  padding: 10px 50px;
+  margin-left: 9px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete{
+  margin-left: 10px;
+}
+.deletetext{
+  padding: 5px;
+}
+.edit{
+  margin-left: 140px;
+}
+.edittext{
+  padding: 2px;
 }
