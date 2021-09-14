@@ -1,7 +1,8 @@
 class ImagesController < ApplicationController
 
     def index
-        render json: Images.all
+        images = Image.all
+        render json: images
     end
     
     def create
@@ -10,7 +11,7 @@ class ImagesController < ApplicationController
     end
 
     def update
-        image = Images.find(params[:id])
+        image = Image.find(params[:id])
         if image
             image.update(image_params)
             render json: image, status: :accepted
