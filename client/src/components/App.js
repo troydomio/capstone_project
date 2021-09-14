@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../App.css';
-import Login from '../Login';
+import Login from './Login';
 import NavBar from './Navbar';
 import Main from '../ImageContainer';
 
@@ -16,19 +16,12 @@ function App() {
     });
   }, []);
 
-  // if (!user) return <Login onLogin={setUser} />;
+  if (!user) return <Login onLogin={setUser} />;
 
   return (
 
-
     <>
-      <div> "hi" 
-
-      <NavBar/>
-      <Login/>
-        
-      </div>
-      {/* <NavBar user={user} setUser={setUser} /> */}
+      <NavBar user={user} setUser={setUser} />
       {/* <main>
         <Switch>
           <Route path="/new">
