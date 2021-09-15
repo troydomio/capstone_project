@@ -1,7 +1,7 @@
 class ImagesController < ApplicationController
 
     def index
-        images = Image.all
+        images = @current_user.images.all
         render json: images
     end
     
