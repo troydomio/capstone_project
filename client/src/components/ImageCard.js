@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 
-const ImageCard = ( {image, deleteItem, onUpdate} ) => {
+const ImageCard = ({image, deleteItem, onUpdate}) => {
 
     const [updatedTitle, setUpdatedTitle] = useState("");
     const [updatedDescription, setUpdatedDescription] = useState("");

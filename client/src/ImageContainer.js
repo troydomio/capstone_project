@@ -1,7 +1,7 @@
-import ImageCard from "./ImageCard"
+import ImageCard from "./components/ImageCard"
 import { useState,useEffect } from "react"
 
-const Main = () => {
+const ImageContainer= () => {
 
     const[images, setImages] = useState([])
     const [title, setTitle] = useState("");
@@ -21,7 +21,7 @@ const Main = () => {
     }
 
     function onAddImage(newImage) {
-        const updatedImageArray = [...images, newImage,];
+        const updatedImageArray = [newImage, ...images];
         setImages(updatedImageArray);
       }
 
@@ -76,4 +76,4 @@ const Main = () => {
     
 
 
-export default Main
+export default ImageContainer

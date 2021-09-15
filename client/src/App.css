@@ -4,12 +4,23 @@
 /* Nav bar css */
 .navbar{
   border-bottom: 1px solid #D3D3D3;
-  font-family:'yellowtail';
-  font-size: 28px;
+}
+.logotext{
+   font-family:'yellowtail'; 
+   font-size: 30px;
 }
 a{
   text-decoration: none;
   color: black;
+}
+.welcomename{  
+}
+.logoutbutton{
+}
+.out{
+  /* border: 1px solid black; */
+  max-width: 60%;
+  padding: 2%;
 }
 
 /* Login page  */
@@ -18,14 +29,37 @@ a{
   padding: 1vh;
   margin: auto;
   margin-top: 1vh;
-  max-width: 500px;
+  max-width: 100%;
 }
 .login input{
   width: 400px;
   box-sizing: border-box;
   padding: 22px 20px;
   margin: 8px 0;
-  font-size: 20px;
+  font-size: 20px; 
+}
+.logintextlogo{
+  font-family:'yellowtail';
+  font-size: 60px;
+  margin-left: 70px;
+  max-width: 10%;
+}
+.logincontainer{
+  /* border: 1px solid black; */
+   margin-top: 11px;
+   margin-right: 12%;
+   padding: 8px;
+   max-width: 80%;
+   float: right;
+}
+.landingcontainer{
+  /* border:1px solid pink; */
+  max-width: 90%;
+  height: 560px;
+  margin-left:auto;
+  background-image: url("https://s3images.coroflot.com/user_files/individual_files/large_1007330_7s9uwmkiksuyhozltqgrnuy4l.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
 }
 
 /* Main page css */
@@ -46,13 +80,11 @@ a{
   margin-left: 2vh;
   margin-top: 2vh;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
- 
 }
 .imagecard:hover{
   box-shadow: 5px 5px 5px grey;
   transform: translateY(-10px);
 }
-
 .imagecontent{
 background-color: #D0D4D7
 }
@@ -64,7 +96,6 @@ background-color: #D0D4D7
   border: 1px solid #D3D3D3;
   padding: 10px 50px;
   margin-left: 9px;
-
 }
 .delete{
   margin-left: 10px;

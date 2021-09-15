@@ -1,13 +1,17 @@
 import '../App.css';
-import Login from './Login';
+// import Login from './Login';
+// import Signup from './Signup';
 import NavBar from './Navbar';
 import Main from './ImageContainer';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route
 } from "react-router-dom";
-import { useState, useEffect } from "react"
+import LandingPage from './LandingPage';
+import { useState, useEffect } from "react";
+
+
 
 function App() {
 
@@ -22,7 +26,7 @@ function App() {
     });
   }, []);
 
-  if (!user) return <Login onLogin={setUser} />;
+  if (!user) return <LandingPage onLogin={setUser} />;
 
   return (
     <div className="App">
