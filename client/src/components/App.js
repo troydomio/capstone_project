@@ -6,7 +6,7 @@ import Main from './ImageContainer';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 
 function App() {
