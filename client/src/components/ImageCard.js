@@ -1,21 +1,26 @@
-import '../App.css'
+import potato from '../media/potato.png'
+import {BsTrash, BsPencil} from "react-icons/bs";
 
-const onClick = (e) => {
-    e.preventDefault();
-    console.log("hi")
-}
 
-const Login = () => {
+
+const ImageCard = () => {
     return (
-        <div className="login">
-          <form>
-            <input className="login" type="text"/>
-            <input className="login" type="password"/>
-            <input className="login" type="submit" value="Login" onClick={onClick}/>
-            <input className="login" type="submit" value="Sign Up"/>
-          </form>
+        <div className="imagecard">
+            <div className="user">
+            
+            <p >username1</p>
+            <p className="edit"><BsPencil/></p>
+            
+            <p className="delete"><BsTrash/></p>
+            </div>
+            
+           <div className="imagecontent">
+               <img src={potato} alt="potato"></img>
+            </div>
+            <p>this is a potato, blah blah blah blah blah</p>
+            <input type="text" placeholder="type a comment here..." className="comment"/>
         </div>
     )
 }
 
-export default Login
+export default ImageCard

@@ -27,10 +27,10 @@ function LoginForm({ onLogin }) {
   
     return (
 <div className="login">
-<form>
+<form onSubmit={handleSubmit}>
             <input className="login" type="text" value={username} onChange={(e) => setUsername(e.target.value)}/>
             <input className="login" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
-            <input className="login" type="submit" value="Login" onClick={handleSubmit}/>
+            <input className="login" type="submit" value="Login"/>
           </form>
         </div>
 

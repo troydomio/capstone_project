@@ -17,12 +17,11 @@ function Login({ onLogin }) {
       </div>
       </>
       ) : (
-        // <>
-        // <SignUpForm onLogin={onLogin} />
-        // <br />
-        // Already have an account? <button onClick={()=> setShowLogin(true)}>Log in</button>
-        // </>
-        "hi"
+        <>
+        <SignUpForm onLogin={onLogin} />
+        <br />
+        Already have an account? <button onClick={()=> setShowLogin(true)}>Log in</button>
+        </>
       )}
         </>
     )
