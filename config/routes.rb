@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   get "/me", to:"users#show"
   post "/signup", to: "users#create"
+  get "/dashboard", to: "images#trueindex"
   
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!

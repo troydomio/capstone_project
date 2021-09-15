@@ -29,7 +29,10 @@ function App() {
       <NavBar user={user} setUser={setUser}/>
          <Router>
             <Switch>
-              <Route path="/">
+              <Route exact path="/">
+              <Main/>
+              </Route>
+              <Route path="/dashboard">
               <Main/>
               </Route>
             </Switch>
