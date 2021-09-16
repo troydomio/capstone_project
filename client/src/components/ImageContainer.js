@@ -63,7 +63,7 @@ const Main = () => {
         </form>
        
     {images.map((image)=> (
-        // console.log(image.image_url)
+        // console.log(image)
        <ImageCard image={image} deleteItem={deleteItem} onUpdate={onUpdateImage}/>
     ))}  
        </>
