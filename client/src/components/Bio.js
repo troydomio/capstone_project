@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function Bio({ user, setUser }) {
     const [bioInput, setBioInput] = useState("")
     const [bio, setBio] = useState("")

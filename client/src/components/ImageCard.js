@@ -43,7 +43,7 @@ const ImageCard = ({image, deleteItem, onUpdate}) => {
         <div className="imagecard">
             <div className="user">
             
-            <p>user id: {image.user_id}</p>
+            <p>user: {image.user.username}</p>
             <p className="edit"><BsPencil onClick={handleEdit}/></p>
             {editing?(
                     <div>

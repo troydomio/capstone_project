@@ -52,15 +52,19 @@ const Main = () => {
                 setImages(updatedImageArray);
               }
 
+        function handleAddButton() {
+          setAddButton(!addButton);
+        }
+
     return (
         <>
-       <button>Add Image</button>
-        <form onSubmit={handleSubmit}>
+       <button onClick={handleAddButton}>Add Image</button>
+        {addButton ? (<form onSubmit={handleSubmit}>
             <input type="text" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)}></input>
             <input type="text" placeholder="description" value={description} onChange={(e) => setDescription(e.target.value)}></input>
             <input type="text" placeholder="image_url" value={image_url} onChange={(e) => setImage(e.target.value)}></input>
             <button type="submit">Submit</button>
-        </form>
+        </form>) : (null)}
        
     {images.map((image)=> (
         // console.log(image.image_url)
