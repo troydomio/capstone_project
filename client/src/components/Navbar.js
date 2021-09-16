@@ -37,7 +37,6 @@ const NavBar = ({ user, setUser }) => {
         <p onClick={handleClick}>
         </p>
         <a href="/dashboard"><button>  bio </button></a>
-        <button >delete account</button>
         <button variant="outline" onClick={handleLogoutClick}>
           Logout
         </button>
