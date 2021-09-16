@@ -66,10 +66,12 @@ const Main = () => {
             <button type="submit">Submit</button>
         </form>) : (null)}
        
+     <div className="imagecontainer"> 
     {images.map((image)=> (
-        // console.log(image.image_url)
+        // console.log(image)
        <ImageCard image={image} deleteItem={deleteItem} onUpdate={onUpdateImage}/>
     ))}  
+    </div> 
        </>
        )}
         
