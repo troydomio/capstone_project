@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   patch "/user", to: "users#patch"
   delete "/user", to: "users#destroy"
   
+  get "/dashboard", to: "users#show"
   
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!

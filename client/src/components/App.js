@@ -1,12 +1,18 @@
-import "../App.css";
-import NavBar from "./Navbar";
-import Main from "./ImageContainer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import LandingPage from "./LandingPage";
-import { useState, useEffect } from "react";
+import '../App.css';
+import Login from './Login';
+import NavBar from './Navbar';
+import Main from './ImageContainer';
+import UserProfile from './UserProfile';
 import Bio from './Bio';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import { useState, useEffect } from "react"
 
 function App() {
+
   const [user, setUser] = useState(false);
 
   useEffect(() => {
@@ -18,19 +24,24 @@ function App() {
     });
   }, []);
 
-  if (!user) return <LandingPage onLogin={setUser} />;
+  if (!user) return <Login onLogin={setUser} />;
 
   return (
     <div className="App">
-      <NavBar user={user} setUser={setUser} />
-      <Bio user={user} setUser={setUser}></Bio>
-      <Router>
-        <Switch>
-          <Route path="/">
-            <Main />
-          </Route>
-        </Switch>
-      </Router>
+      <NavBar user={user} setUser={setUser}/>
+        <Bio user={user} setUser={setUser}></Bio>
+         <Router>
+            <Switch>
+              <Route exact path="/">
+              <Main/>
+              </Route>
+              <Route path="/dashboard">
+              <UserProfile />
+              </Route>
+            </Switch>
+         </Router>
+     
+      
     </div>
   );
 }

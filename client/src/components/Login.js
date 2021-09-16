@@ -1,42 +1,45 @@
-import "../App.css";
 import { useState } from "react";
+import '../App.css'
+import LoginForm from "./LoginForm";
+import SignUpForm from "./SignUpForm";
 
-const Login = ({ onLogin }) => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState([]);
+function Login({ onLogin }) {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch("/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: username,
-        password: password,
-      }),
-    }).then((r) => {
-      if (r.ok) {
-        r.json().then((user) => onLogin(user));
-      } else {
-        r.json().then((err) => setErrors(err.errors));
-      }
-    });
-  };
+  const [showLogin, setShowLogin] = useState(true);
 
-  return (
-    <div className="login">
-      <form onSubmit={handleSubmit}>
-        <input className="login" type="text" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+    return (
+      <div  className="landingcontainer">
+      <div className="logincontainer">
+         <div className="login">
+         <div className="logintextlogo"><p>Potatogram</p></div>
+      {showLogin ? (
+        <>
+      <LoginForm onLogin={onLogin} />
+      <div className="login">
+      Don't have an account? <button className="login" onClick={()=> setShowLogin(false)}>Sign up</button>
+      </div>
+      </>
+      ) : (
+        <>
+        <SignUpForm onLogin={onLogin} />
+        <br />
+        Already have an account? <button onClick={()=> setShowLogin(true)}>Log in</button>
+        </>
+      )}
 
-        <input className="login" type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-
-        <input className="login" type="submit" value="Log In" />
-      </form>
+{/* <div className="logincontainer">
+        <div className="login">
+          <div className="logintextlogo"><p>Potatogram</p></div>
+        {activeForm === "login"? <Signup onLogin={onLogin}/> : <Login onLogin={onLogin}/> }
+         <p onClick={()=>setActiveForm("login")}>Dont have an account? Sign up</p> 
+         <p onClick={()=>setActiveForm("")}>Have an account? Login</p> 
+        </div>
+        </div>
+    </div> */}
     </div>
-  );
-};
+        </div>
+        </div>
+    )
+}
 
 export default Login;

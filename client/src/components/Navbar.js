@@ -14,19 +14,26 @@ const NavBar = ({ user, setUser }) => {
     });
   };
 
-  //const handleDelete = async (e) => {
-   // const response = await fetch("/users", {
- //     method: "DELETE",
-    //  headers: {
-    //    "Content-Type": "application/json",
-  //    },
-  //    body: JSON.stringify({
-    //    username: username,
-    //    password: password,
-     //   password_confirmation: passwordConfirmation,
-    //  }),
-  //  })
- //   const data = await response.json();
+const NavBar = ({ user, setUser }) => {
+
+    function handleLogoutClick() {
+        fetch("/logout", { method: "DELETE" }).then((r) => {
+          if (r.ok) {
+            setUser(null);
+          }
+        });
+      }
+
+    return (
+        <div className="navbar">
+       <a href="/"><p className="logotext">Potatogram</p></a>
+
+       <button variant="outline" onClick={handleLogoutClick}>
+          Logout
+        </button>
+        </div>
+    )
+}
 
   //  if (response.ok) {
      
