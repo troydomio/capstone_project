@@ -20,6 +20,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+<<<<<<< HEAD
+  "dependencies": {
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.3.0"
+  }
+}
+=======
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -38,3 +45,4 @@
       "last 1 safari version"
     ]
 }}
+>>>>>>> 68ee97036518f649dd54a1374a1b9085e1fa40c1

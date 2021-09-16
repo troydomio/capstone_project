@@ -3,6 +3,7 @@ import Login from './Login';
 import NavBar from './Navbar';
 import Main from './ImageContainer';
 import UserProfile from './UserProfile';
+import Bio from './Bio';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("/me").then((r) => {
+    fetch("http://localhost:4000/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <NavBar user={user} setUser={setUser}/>
+        <Bio user={user} setUser={setUser}></Bio>
          <Router>
             <Switch>
               <Route exact path="/">
