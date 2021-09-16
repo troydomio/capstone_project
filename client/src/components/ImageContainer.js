@@ -61,11 +61,12 @@ const Main = () => {
             <input type="text" placeholder="image_url" value={image_url} onChange={(e) => setImage(e.target.value)}></input>
             <button type="submit">Submit</button>
         </form>
-       
+     <div className="imagecontainer"> 
     {images.map((image)=> (
         // console.log(image)
        <ImageCard image={image} deleteItem={deleteItem} onUpdate={onUpdateImage}/>
     ))}  
+    </div> 
        </>
        )}
         
