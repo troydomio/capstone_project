@@ -81,12 +81,16 @@ a{
   margin-top: 2vh;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+.imagecard img{
+  width: 260px;
+  height: 260px;
+}
 .imagecard:hover{
   box-shadow: 5px 5px 5px grey;
   transform: translateY(-10px);
 }
 .imagecontent{
-background-color: #D0D4D7
+background-color: #D0D4D7;
 }
 .user{
   border-bottom: 1px solid black;
