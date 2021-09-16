@@ -5,10 +5,10 @@ class ImagesController < ApplicationController
         render json: images
     end
 
-    def trueindex
-        images = Image.all
-        render json: images
-    end
+    # def trueindex
+    #     images = Image.all
+    #     render json: images
+    # end
     
     def create
         image = @current_user.images.create!(image_params)

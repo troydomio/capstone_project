@@ -13,7 +13,7 @@ const NavBar = ({ user, setUser }) => {
 
     return (
         <div className="navbar">
-       <a href=""><p className="logotext">Potatogram</p></a>
+       <a href="/"><p className="logotext">Potatogram</p></a>
 
        <button variant="outline" onClick={handleLogoutClick}>
           Logout

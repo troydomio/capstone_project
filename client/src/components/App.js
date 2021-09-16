@@ -2,6 +2,7 @@ import '../App.css';
 import Login from './Login';
 import NavBar from './Navbar';
 import Main from './ImageContainer';
+import UserProfile from './UserProfile';
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,7 +34,7 @@ function App() {
               <Main/>
               </Route>
               <Route path="/dashboard">
-              <Main/>
+              <UserProfile />
               </Route>
             </Switch>
          </Router>
