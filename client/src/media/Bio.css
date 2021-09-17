@@ -1,0 +1,17 @@
+.bio {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+}
+
+.bioEnd {
+    width: 25%;
+    padding: 2px;
+    margin: 2px;
+}
+
+
+.bioBox {
+    height: 50px;
+}

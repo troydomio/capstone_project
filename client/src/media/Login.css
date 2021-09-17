@@ -1,0 +1,20 @@
+button{
+    border-radius: 12px;
+    background-color: rgb(150, 133, 149);
+    color: #fff;
+}
+input[type=submit] {
+    border-radius: 12px;
+    background-color: rgb(150, 133, 149);
+    color: #fff;
+}
+
+input[type=text]{
+
+border-radius: 12px;
+}
+input[type=password]{
+
+border-radius: 12px;
+}
+

@@ -62,8 +62,13 @@ const Main = () => {
 
     return (
         <>
+<<<<<<< HEAD
+       <button>Add Image</button>
+        <form class="newPhotoForm" onSubmit={handleSubmit}>
+=======
        <button onClick={handleAddButton}>Add Image</button>
         {addButton ? (<form onSubmit={handleSubmit}>
+>>>>>>> fa51333d8d871710d6161f4d6341c9380fe75ef5
             <input type="text" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)}></input>
             <input type="text" placeholder="description" value={description} onChange={(e) => setDescription(e.target.value)}></input>
             <input type="text" placeholder="image_url" value={image_url} onChange={(e) => setImage(e.target.value)}></input>

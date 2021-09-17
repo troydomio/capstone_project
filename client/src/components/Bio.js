@@ -1,5 +1,9 @@
 import { useState } from "react";
+<<<<<<< HEAD
+import "../media/Bio.css"
+=======
 
+>>>>>>> fa51333d8d871710d6161f4d6341c9380fe75ef5
 function Bio({ user, setUser }) {
     const [bioInput, setBioInput] = useState("")
     const [bio, setBio] = useState("")
@@ -28,11 +32,10 @@ function Bio({ user, setUser }) {
 
     return (
 
-        <div>
-            <h2>Bio</h2>
-            <div>{user.bio}</div>
-            <input placeholder="start writing your bio here!" onChange={(e) => setBioInput(e.target.value)} value={bioInput}></input>
-            <button onClick={handleSubmit}>submit</button>
+        <div className="bio">
+            <h2 className="bioItem1">Bio: {user.bio}</h2>
+            <textarea className="bioBox bioEnd" placeholder="start writing your bio here!" onChange={(e) => setBioInput(e.target.value)} value={bioInput}></textarea>
+            <button className="bioEnd" onClick={handleSubmit}>submit</button>
         </div >
     )
 
