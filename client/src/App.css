@@ -5,9 +5,15 @@
 .navbar{
   border-bottom: 1px solid #D3D3D3;
 }
+
+.App button{
+  margin-left: 75px;
+}
+
 .logotext{
    font-family:'yellowtail'; 
    font-size: 30px;
+   padding-left: 75px;
 }
 a{
   text-decoration: none;
