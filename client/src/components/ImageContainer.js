@@ -39,7 +39,11 @@ const Main = () => {
             }),
             })
             .then(response => response.json())
-            .then(data => onAddImage(data)); }
+            .then(data => onAddImage(data));
+            setTitle("")
+            setDescription("")
+            setImage("")
+           }
 
             function onUpdateImage(updatedImage) {
                 const updatedImageArray = images.map((image) => {

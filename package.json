@@ -19,11 +19,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-<<<<<<< HEAD
-  }
-
-  }
-=======
   },
 
   "eslintConfig": {
@@ -45,4 +40,3 @@
     ]
 }}
 
->>>>>>> 0da828b2dfcc538ce299753390722df95adbd09c

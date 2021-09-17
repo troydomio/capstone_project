@@ -2,13 +2,11 @@ import potato from '../media/potato.png'
 import {BsTrash, BsPencil} from "react-icons/bs";
 import { useState } from 'react';
 
-
-
 const ImageCard = ({image, deleteItem, onUpdate}) => {
 
-    const [updatedTitle, setUpdatedTitle] = useState("");
-    const [updatedDescription, setUpdatedDescription] = useState("");
-    const [updatedImage, setUpdatedImage] = useState("");
+    const [updatedTitle, setUpdatedTitle] = useState(image.title);
+    const [updatedDescription, setUpdatedDescription] = useState(image.description);
+    const [updatedImage, setUpdatedImage] = useState(image.image_url);
     const [editing, setEditing] = useState(false);
 
     const deleteImage = () => {
