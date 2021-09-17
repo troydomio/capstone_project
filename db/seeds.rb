@@ -14,6 +14,9 @@ Image.create(title: "good times with my friends", description: "besties", image_
 Image.create(title: "the gals", description: "luv y'all 4eva", image_url: "https://m.media-amazon.com/images/I/61yXL70-RaL._SX679_.jpg", user_id: 1)
 Image.create(title: "old pic", description: "#tbt", image_url: "https://images.theconversation.com/files/401955/original/file-20210520-23-83r6ds.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop", user_id: 1)
 Image.create(title: "scary pic", description: "scary vibes", image_url: "https://www.popsci.com/uploads/2019/03/18/WEPPVOVTYPHVPEIZBFVKVL4H5I.jpeg?width=785", user_id: 1)
+Image.create(title: "peeled", description: "felt cute might delete later", image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2020%2F06%2F09%2Fpotato-benefits-2000.jpg", user_id: 1)
+
+
 
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
