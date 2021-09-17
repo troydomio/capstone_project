@@ -67,24 +67,26 @@ a{
 .imagecard{
   border: 1px solid #D3D3D3;
   max-width: 40vh;
-  height: 60vh;
-  overflow:scroll;
-  margin-left: 2vh;
-  margin-top: 2vh;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  background-color:  rgb(150, 133, 149)
+  height: 45vh;
+  /* overflow:scroll; */
+  margin-left: 5vh;
+  margin-top: 5vh;
+  padding: 7px;
+  box-shadow: 0 8px 16px 0 rgba(104, 81, 81, 0.2);
+  background-color:  rgb(150, 133, 149);
+  font-family: arial, helvetica, sans-serif;
 }
 .imagecard img{
-  width: 260px;
+  width: 100%;
   height: 260px;
 }
 .imagecard:hover{
   box-shadow: 5px 5px 5px grey;
   transform: translateY(-10px);
 }
-.imagecontent{
+/* .imagecontent{
 background-color: #D0D4D7;
-}
+} */
 .user{
   border-bottom: 1px solid black;
   display: flex;
@@ -110,4 +112,13 @@ background-color: #D0D4D7;
   padding: 2rem 1rem;
   margin: 2rem 0;
   background-color: rgb(165, 145, 164)
+}
+
+.imagecard p {
+  color: #fff;
+  text-shadow: 2px 0 0 rgb(136, 120, 136), 0 -2px 0 rgb(136, 120, 136), 0 2px 0 rgb(136, 120, 136), -2px 0 0 rgb(136, 120, 136);
+}
+
+body {
+  padding-bottom: 100px;
 }

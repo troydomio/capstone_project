@@ -79,7 +79,8 @@ const ImageCard = ({image, deleteItem, onUpdate}) => {
            <div className="imagecontent">
                <img src={image.image_url} alt="potato"></img>
             </div>
-            <p>{image.description}</p>
+            <p>title: {image.title}</p>
+            <p>description: {image.description}</p>
             {/* <input type="text" placeholder="type a comment here..." className="comment"/> */}
         </div>
     )
