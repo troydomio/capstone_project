@@ -1,9 +1,6 @@
 import { useState } from "react";
-<<<<<<< HEAD
 import "../media/Bio.css"
-=======
 
->>>>>>> fa51333d8d871710d6161f4d6341c9380fe75ef5
 function Bio({ user, setUser }) {
     const [bioInput, setBioInput] = useState("")
     const [bio, setBio] = useState("")
