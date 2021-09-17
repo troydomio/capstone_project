@@ -2,6 +2,7 @@ import { useState } from "react";
 import '../App.css'
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
+import "../media/Login.css";
 
 function Login({ onLogin }) {
 

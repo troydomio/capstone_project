@@ -23,7 +23,6 @@ a{
   padding: 2%;
 }
 
-/* Login page  */
 .login{
   width: 400px;
   padding: 1vh;
@@ -45,7 +44,6 @@ a{
   max-width: 10%;
 }
 .logincontainer{
-  /* border: 1px solid black; */
    margin-top: 11px;
    margin-right: 12%;
    padding: 8px;
@@ -53,18 +51,15 @@ a{
    float: right;
 }
 .landingcontainer{
-  /* border:1px solid pink; */
   max-width: 90%;
-  height: 560px;
+  height: 750px;
   margin-left:auto;
   background-image: url("https://s3images.coroflot.com/user_files/individual_files/large_1007330_7s9uwmkiksuyhozltqgrnuy4l.png");
   background-repeat: no-repeat;
   background-size: 40%;
 }
 
-/* Main page css */
 .imagecontainer{
-  /* border: 2px solid black; */
   margin: auto;
   margin-top: 3vh;
   max-width: 970px;
@@ -80,6 +75,7 @@ a{
   margin-left: 2vh;
   margin-top: 2vh;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color:  rgb(150, 133, 149)
 }
 .imagecard:hover{
   box-shadow: 5px 5px 5px grey;
@@ -108,4 +104,9 @@ background-color: #D0D4D7
 }
 .edittext{
   padding: 2px;
+}
+.newPhotoForm{
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgb(165, 145, 164)
 }
