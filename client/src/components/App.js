@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("http://localhost:4000/me").then((r) => {
+    fetch("http://localhost:3000/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
