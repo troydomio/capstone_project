@@ -33,17 +33,6 @@ function LoginForm({ onLogin }) {
             <input className="login" type="submit" value="Login"/>
           </form>
         </div>
-
-        /* <FormField>
-          <Button variant="fill" color="primary" type="submit">
-            {isLoading ? "Loading..." : "Login"}
-          </Button>
-        </FormField>
-        <FormField>
-          {errors.map((err) => (
-            <Error key={err}>{err}</Error>
-          ))}
-        </FormField> */
     );
   }
   

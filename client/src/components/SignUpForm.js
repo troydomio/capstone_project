@@ -77,7 +77,6 @@ function SignUpForm({ onLogin }) {
          />
 
        </form>
-   
      </div>
     
  )
